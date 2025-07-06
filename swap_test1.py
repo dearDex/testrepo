@@ -27,7 +27,7 @@ gmon_address = Web3.to_checksum_address('0xaEef2f6B429Cb59C9B2D7bB2141ADa993E857
 gmon_contract = w3.eth.contract(address= gmon_address, abi=octo_contract_abi)
 
 decimals = gmon_contract.functions.decimals().call()
-gmon_amount = int(x * (10 ** decimals))
+gmon_amount = int(1 * (10 ** decimals))
 
     # gmon_price = 1.92
     # gmon_amount = 0.05
